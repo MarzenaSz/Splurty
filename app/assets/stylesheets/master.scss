@@ -49,6 +49,8 @@
   font-size: 25px;
   /* create the underline effect */
   border-bottom: 1px solid #dfdfdf;
+  font-family: 'kaushan_scriptregular', sans-serif;
+  font-weight: bold;
 }
 
 header 
@@ -61,4 +63,17 @@ hr
 {
 /*make the horizontal rule clear out the Bootstrap columns, otherwise we wont see it*/
   clear: both;
+}
+
+h1 
+{
+  font-family: 'kaushan_scriptregular', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h2
+{
+  font-family: 'kaushan_scriptregular', sans-serif;
+
 }
