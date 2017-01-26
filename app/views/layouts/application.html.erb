@@ -9,6 +9,24 @@
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-3">
+        LOGO
+      </div>
+
+      <div class="col-4">
+      Splurting out unsolicited advice about entrepreneurship since 2016
+      </div>
+
+      <div class="col-5">
+        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'About', '#' %>
+      </div>
+    </header>
+    <!-- Clear out Bootstrap columns so the quotes are not showing up inside of our top navigation bar. -->
+    <br class="clear" />
+
     <%= yield %>
+
   </body>
 </html>
