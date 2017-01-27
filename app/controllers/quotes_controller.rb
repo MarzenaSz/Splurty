@@ -3,10 +3,6 @@ class QuotesController < ApplicationController
     # a random quote in our database is stored into the variable called @quote
     @quote = Quote.order("RANDOM()").first
   end
-
-  def new
-    @quote = Quote.new
-  end
   # store our quote fields
   def create
     @quote = Quote.create(quote_params)
