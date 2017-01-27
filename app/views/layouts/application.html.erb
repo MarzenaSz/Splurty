@@ -37,7 +37,23 @@
     <!-- clear out Bootstrap columns so the quotes are not showing up inside of our top navigation bar. -->
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
 
+    <div class="footer">
+      <div class="container">
+
+        <div class="col-6">
+          <%= link_to "This isn't enough, I need more", "#", :class => "next-quote" %>
+        </div>
+
+        <div class="col-6 footer-blurb">
+          Proudly hacked in London, UK by <a href="http://marzenaszopinska.getforge.io/">Marzena</a><br />
+        </div>
+
+      </div>
+    </div>
+    
   </body>
 </html>
