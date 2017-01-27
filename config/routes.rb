@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'quotes#index'
   # get additional URLs pointing to our quote form
   resources :quotes
+  # get the about URL and point it to our about action
+  get 'about', to: 'quotes#about'
 end
