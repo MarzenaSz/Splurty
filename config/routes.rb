@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :quotes
   # get the about URL and point it to our about action
   get 'about', to: 'quotes#about'
+  # get the about URL and point it to our control action
+  get 'control', to: 'quotes#control'
 end
