@@ -1,4 +1,7 @@
 class QuotesController < ApplicationController
+
+  before_filter :authorize_admin, only: :control
+
   def index
     # a random quote in our database is stored into the variable called @quote
     @quote = Quote.order("RANDOM()").first
@@ -26,5 +29,11 @@ class QuotesController < ApplicationController
 
   def quote_params
     params.require(:quote).permit(:saying, :author)
+  end
+
+  def authorize_admin
+    #redirects to previous page and displays a message
+    redirect_to :back, status: 401 unless current_user.admin
+    
   end
 end
